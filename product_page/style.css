@@ -91,25 +91,25 @@ nav{
     justify-content: space-evenly;
 }
 
-#polls_img, .bollards_img {
+#polls_img, #bollards_img {
     position: relative;
     height: 65vh;
     width: 40%;
     overflow: hidden; /* Add this to hide overflow */
 }
 
-#polls_img img, .bollards_img img {
+#polls_img img, #bollards_img img {
     height: 65vh;
     width: 100%;
     transition: transform 0.3s ease-in; 
 }
 
 #polls_img:hover img {
-    content: url('../AssertsAll/garden_lights/light_garden\ lights.jpg'); /* Change image on hover */
+    content: url(''); /* Change image on hover */
     transform: scale(1.1) translateY(-15px);
 }
 
-.bollards_img:hover img {
+#bollards_img:hover img {
     content: url('../AssertsAll/garden_lights/light_garden\ lights.jpg'); /* Change image on hover */
     transform: scale(1.1) translateY(-15px);
 }
@@ -127,7 +127,7 @@ nav{
     transition: opacity 0.3s ease-in, transform 0.3s ease-in;
 }
 
-.bollards_img:hover .hover-text,
+#bollards_img:hover .hover-text,
 #polls_img:hover .hover-text {
     opacity: 1; /* Show text on hover */
     transform: translateY(0); /* Optional: adjust position */
