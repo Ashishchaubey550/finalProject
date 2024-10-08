@@ -21,18 +21,3 @@ var product_view = document.querySelector("#view-product")
             top:dets.y-30
         })
     })
-
-
-//=========================loader============
-var tl = gsap.timeline();
-tl.from(".preloader", {
-  opacity: 0,
-  duration: 0.3,
-  delay: 0.2
-});
-tl.from(".preloader", {
-  transform: "scaleX(0.7) scaleY(0.2) translateY(-10%)",
-  borderRadius: "50px",
-  duration:2,
-  ease: "expo.out",
-});

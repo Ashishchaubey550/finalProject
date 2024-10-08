@@ -1,19 +1,26 @@
-document.addEventListener("DOMContentLoaded", function() {
-    gsap.from("#polls_img", {
-        opacity: 1,
-        duration: 2,
-        y: 1000,
-        ease: "bounce.out",
-    });
-    gsap.from("#bollards_img", {
-        opacity: 1,
-        duration: 2,
-        x: 1000,
-        ease: "bounce.out",
-        delay: 1.9,
-        stagger: 2,
-    });
-});
+var loader = document.querySelector("#preloader");
+setTimeout(function() {
+    loader.style.top = "-100%"
+},3500)
+
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     gsap.from("#polls_img", {
+//         opacity: 1,
+//         duration: 2,
+//         y: 1000,
+//         ease: "bounce.out",
+//     });
+//     gsap.from("#bollards_img", {
+//         opacity: 1,
+//         duration: 2,
+//         x: 1000,
+//         ease: "bounce.out",
+//         delay: 1.9,
+//         stagger: 2,
+//     });
+// });
 
 
 window.addEventListener('resize', function() {
@@ -22,3 +29,10 @@ window.addEventListener('resize', function() {
         herosection.style.height = 'auto'; // Adjust height for mobile
     }
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const scroll = new LocomotiveScroll({
+        el: document.querySelector('#herosection'),
+        smooth: true,
+    });
+});
+
